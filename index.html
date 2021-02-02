@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inas portefølje</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./index.html">Om meg</a>
+        </div>
+        <div>
+            <a href="#prosjekter">Prosjekter</a>
+        </div>
+    </header>
+    <section id="ommeg">
+        <div class="image-container">
+            <img src="./IMG/CV_bilde.jpg" alt="Bilde av meg">
+        </div>
+        <div>
+            <h1>
+                Jeg er utdannet bibliotekar med videreutdanning i
+                interaksjonsdesign. Kunnskapene mine inkluderer UI
+                design, UX prosess, struktur, fargeteori m.m. Jeg er kjent
+                med Github, Front End, sosiale medier, generell HTML, CSS
+                og litt Javascript. Jeg har sterke språkferdigheter i både norsk og engelsk.
+            </h1>
+            <h1>
+                Jeg trives best med spilldesign, men kan fint jobbe med de
+                fleste prosjekter. Et godt samarbeid med tydelig
+                kommunikasjon og gjensidig respekt er viktig for meg. Jeg
+                jobber fint i grupper såvel som selvstendig.
+            </h1>
+            <h1>
+                På fritiden liker jeg å skrive fortellinger, komponere musikk
+                og synge. For tiden jobber jeg med et originalt tegneserieprosjekt i samarbeid
+                med en venn fra USA.
+            </h1>
+        </div>
+    </section>
+
+    <section id="prosjekter-2">
+        <div class="prosjekt">
+            <button class="overlay-trigger" data-target="min_id_1">Skatteluringen</button>
+            <div class="img-container">
+                <div id="min_id_1" class="overlay">
+                    <h2>
+                        <strong>
+                            Spilldesign
+                        </strong>
+                    </h2>
+                    <p>
+                        Skatteluringen er et spill som vi designet for å lære bort på en morsom
+                        måte. Den tar for seg et alvorlig tema, skatteunndragelse, og gir
+                        spillerne innblikk i konsekvensene dette har for et land. Laget for elever
+                        på videregående skole.
+                    </p>
+                    <a target="_blank" href="https://miro.com/app/board/o9J_lbnfvGc=/">
+                        Miro board med prototypen
+                    </a>
+                </div>
+                <img src="IMG/Skatteluringen.jpg" alt="bilde av prototypen for et brettspill">
+            </div>
+        </div>
+        <div class="prosjekt">
+            <button class="overlay-trigger" data-target="min_id_2">Åpenhet</button>
+            <div class="img-container">
+                <div id="min_id_2" class="overlay">
+                    <h2>
+                        <strong>
+                            Nettsidedesign
+                        </strong>
+                    </h2>
+                    <p>
+                        Åpenhet er et norsk selskap som jobber for å digitalisere offentlige
+                        tjenester og skape åpenhet rundt offentlig informasjon. Vi designet en
+                        prototype for en nettside hvor EU-borgere kan finne informasjonen de
+                        trenger i eget (og andres) land.
+                    </p>
+                    <a target="_blank" href="https://1drv.ms/v/s!AiySeUgeBrl4hCppjJIuTlPVN77N">
+                        Video av prototypen
+                    </a>
+                </div>
+                <img src="IMG/Åpenhet.jpg" alt="bilde av prototypen for en nettside">
+            </div>
+        </div>
+        <div class="prosjekt">
+            <button class="overlay-trigger" data-target="min_id_3">Forfattervennen</button>
+            <div class="img-container">
+                <div id="min_id_3" class="overlay">
+                    <h2>
+                        <strong>
+                            Appdesign
+                        </strong>
+                    </h2>
+                    <p>
+                        Forfattervennen er en app som jeg designet for å hjelpe forfattere å finne
+                        synonymer og antonymer. For øyeblikket kun tilgjengelig på amerikansk
+                        engelsk.
+                    </p>
+                    <a target="_blank" href="https://github.com/InaMulvik/Tema-8">
+                        Github
+                    </a>
+                </div>
+                <img src="IMG/Forfattervennen.jpg" alt="bilde av prototypen for en app">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="prosjekter">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+                <h1>Skatteluringen</h1>
+                <i class="fa fa-caret-down"></i>
+            </button>
+        </div>
+        <div class="dropdown-content" id="myDropdown">
+            <h2>
+                <strong>
+                    Spilldesign
+                </strong>
+            </h2>
+            <p>
+                Skatteluringen er et spill som vi designet for å lære bort på en morsom
+                måte. Den tar for seg et alvorlig tema, skatteunndragelse, og gir
+                spillerne innblikk i konsekvensene dette har for et land. Laget for elever
+                på videregående skole.
+            </p>
+            <a target="_blank" href="https://miro.com/app/board/o9J_lbnfvGc=/">
+                Miro board med prototypen
+            </a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+                <h1>Åpenhet</h1>
+                <i class="fa fa-caret-down"></i>
+            </button>
+        </div>
+        <div class="dropdown-content" id="myDropdown">
+            <h2>
+                <strong>
+                    Nettsidedesign
+                </strong>
+            </h2>
+            <p>
+                Åpenhet er et norsk selskap som jobber for å digitalisere offentlige
+                tjenester og skape åpenhet rundt offentlig informasjon. Vi designet en
+                prototype for en nettside hvor EU-borgere kan finne informasjonen de
+                trenger i eget (og andres) land.
+            </p>
+            <a target="_blank" href="https://1drv.ms/v/s!AiySeUgeBrl4hCppjJIuTlPVN77N">
+                Video av prototypen
+            </a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+                <h1>Forfattervennen</h1>
+                <i class="fa fa-caret-down"></i>
+            </button>
+        </div>
+        <div class="dropdown-content" id="myDropdown">
+            <h2>
+                <strong>
+                    Appdesign
+                </strong>
+            </h2>
+            <p>
+                Forfattervennen er en app som jeg designet for å hjelpe forfattere å finne
+                synonymer og antonymer. For øyeblikket kun tilgjengelig på amerikansk
+                engelsk.
+            </p>
+            <a target="_blank" href="https://github.com/InaMulvik/Tema-8">
+                Github
+            </a>
+        </div>
+    </section> -->
+    <footer>
+        <h2>
+            Kontakt: inamulvik@outlook.com (kun seriøse henvendelser)
+        </h2>
+    </footer>
+</body>
+</html>
