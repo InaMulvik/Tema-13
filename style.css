@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+main{
+    background-color: lightgrey;
+}
+
 img{
     display: block;
     width: 100%;
@@ -38,23 +42,19 @@ section{
     grid-template-columns: 1fr 1fr;
     margin: auto;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 
 #ommeg{
+    display: flex;
+    justify-content: center;
     height: auto;
     width: 56%;
+    max-width: 850px;
     margin: auto;
-    margin-top: 15%;
+    padding-top: 13%;
     outline: 2px solid red;
-    padding-bottom: 6.7em;
-}
-
-.image-container >img{
-    width: 37%;
-    padding-top: 1em;
-    margin-right: auto;
 }
 
 #ommeg >div{
@@ -63,8 +63,23 @@ section{
     width: 100%;
 }
 
-#ommeg >div h1{
-    font-size: 1.3rem;
+.image-container >img{
+    width: 100%;
+    padding-top: 1.5em;
+    margin-right: auto;
+}
+
+#ommeg >div:first-child{
+    flex: 4;
+    padding-right: 2%;
+}
+
+#ommeg >div:nth-child(2){
+    flex: 1.5;
+}
+
+#ommeg >div p{
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -72,11 +87,12 @@ section{
 #prosjekter-2{
     font-family: 'Arya', sans-serif;
     width: 100%;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     grid-auto-columns: 200px;
     outline: 2px solid red;
     gap: 2.5%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding-top: 10%;
 }
 
 .prosjekt .img-container{
@@ -123,7 +139,7 @@ button:hover{
 .img-container a{
     text-decoration: none;
     color: white;
-    border-radius: 30%;
+    border-radius: 5%;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -144,4 +160,5 @@ footer{
     grid-template-rows: 1fr;
     justify-content: center;
     font-size: .6rem;
+    padding-top: .5%;
 }
