@@ -3,8 +3,8 @@
     box-sizing: border-box;
 }
 
-main{
-    background-color: lightgrey;
+body{
+    background-color: whitesmoke;
 }
 
 img{
@@ -17,10 +17,10 @@ header{
     background-color: #e0e7f9;
     position: fixed;
     top: 0;
+    height: 180px;
     width: 100%;
-    height: 15%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     z-index: 1;
 }
 
@@ -50,11 +50,12 @@ section{
     display: flex;
     justify-content: center;
     height: auto;
-    width: 56%;
+    width: 90%;
     max-width: 850px;
     margin: auto;
-    padding-top: 13%;
+    padding-top: 180px;
     outline: 2px solid red;
+    flex-wrap: wrap-reverse;
 }
 
 #ommeg >div{
@@ -72,6 +73,7 @@ section{
 #ommeg >div:first-child{
     flex: 4;
     padding-right: 2%;
+    background-color: yellow;
 }
 
 #ommeg >div:nth-child(2){
@@ -127,8 +129,8 @@ button{
     border: none;
     outline: none;
     font-size: 2rem;
-    background-color: white;
     border-radius: 5%;
+    background-color: whitesmoke;
 }
 
 button:hover{
@@ -158,6 +160,6 @@ footer{
     font-family: 'Arya', sans-serif;
     display: flex;
     justify-content: center;
-    font-size: .6rem;
+    font-size: 1rem;
     padding-top: .5%;
 }
