@@ -181,7 +181,6 @@ footer{
 @media (max-width: 600px){
     #ommeg{
         flex-direction: column;
-        padding-top: 200px;
     }
 }
 
@@ -197,9 +196,19 @@ footer{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 1800px){
+    #ommeg{
+        padding-top: 200px;
+    }
     #prosjekter-2{
         padding-top: 200px;
+    }
+}
+
+@media (max-width: 1300px){
+    #prosjekter-2{
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 
